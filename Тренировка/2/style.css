@@ -1,0 +1,480 @@
+html {
+    font-size: 15px;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #01b1f6 white;
+}
+
+body::-webkit-scrollbar {
+    width: 9px;
+    /* ширина scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+    /* цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: white;
+    /* цвет плашки */
+    border-radius: 20px;
+    /* закругления плашки */
+    border: 3px solid #01b1f6;
+    /* padding вокруг плашки */
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background: white;
+    color: white;
+    font-size: 1rem;
+}
+
+
+/* Images */
+
+.bg {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    position: top;
+    width: 150;
+    height: 35px;
+    margin-bottom: 0;
+}
+
+
+/* Content */
+
+.container {
+    width: 100%;
+    max-width: 1980px;
+    margin: 0;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    max-width: 1980px;
+    text-align: center;
+    background: url(img/bg.jpg) center no-repeat;
+    background-size: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.text {
+    color: white;
+}
+
+.title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4rem;
+    line-height: 70px;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.scroll {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+.scroll:hover {
+    color: #01b1f6;
+}
+
+.page {
+    width: 100%;
+    height: 100vh;
+    max-width: 1980px;
+    background-color: white;
+}
+
+
+/* Header */
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.568);
+    padding: 1rem 10px;
+}
+
+.header-logo img {
+    display: block;
+    width: 130px;
+    height: 40px;
+}
+
+.header-logo {
+    margin-left: 250px;
+}
+
+.header-nav {
+    display: flex;
+    padding: 8px 150px;
+}
+
+.header-nav-link {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 16px;
+    margin-right: 2rem;
+    color: #48555B;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.header-nav-link:hover {
+    color: #01b1f6
+}
+
+.header-nav-link.active {
+    color: #01b1f6;
+}
+
+
+/*  Main */
+
+.main-title {
+    display: block;
+    margin: 3rem 0;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 16px;
+    margin-right: 2rem;
+    color: #48555B;
+    text-transform: uppercase;
+}
+
+.main-text {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+    margin-left: 250px;
+    margin-bottom: 150px;
+}
+
+.info {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #48555B;
+}
+
+.info span {
+    color: #01b1f6;
+}
+
+.subinfo {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #48555B;
+    text-align: 2;
+}
+
+.information {
+    margin-right: 250px;
+}
+
+.main-images {
+    display: flex;
+    flex-direction: row;
+    padding-top: 3rem;
+    margin-right: 150px;
+}
+
+.main-images img {
+    margin-right: 2rem;
+    width: 180px;
+}
+
+
+/* Next-main */
+
+.next-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 250px;
+}
+
+.next-header-title {
+    display: block;
+    margin: 3rem 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 16px;
+    margin-right: 2rem;
+    color: #48555B;
+    text-transform: uppercase;
+}
+
+.btn {
+    margin-right: 250px;
+    padding: 1rem 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    background-color: #01b1f6;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    color: #48555B;
+}
+
+
+/* Next-main */
+
+.next-main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 3rem;
+    margin-bottom: 235px;
+}
+
+.rectangle {
+    width: 350px;
+    height: 380px;
+    border: 1px solid #48555b54;
+    box-shadow: 2px 4px 5px #000;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Project*/
+
+.next-main img {
+    width: 100px;
+    height: 120px;
+    margin: 1rem;
+    z-index: 2;
+}
+
+.project {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.project-title {
+    display: block;
+    margin: 1rem 1rem 0 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 16px;
+    color: #48555B;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+.project-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin: 0 1rem 1rem 1rem;
+    font-size: 1rem;
+    color: #48555B;
+    z-index: 2;
+}
+
+.last-main-title {
+    display: block;
+    margin: 3rem 0;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-right: 2rem;
+    color: #48555B;
+    text-transform: uppercase;
+}
+
+.background2 {
+    width: 100%;
+    height: 50vh;
+    max-width: 1980px;
+    text-align: center;
+    background: url(img/bg.svg) center no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn2 {
+    padding: 1rem 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    background-color: #01b1f6;
+    transition: 0.2s;
+}
+
+.btn2:hover {
+    color: #48555B;
+}
+
+.footer {
+    background-color: #171819;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: white;
+}
+
+.input {
+    height: 61px;
+    width: 200px;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.email {
+    display: flex;
+    margin-left: 100px;
+}
+
+.link {
+    height: 240px;
+    width: 100%;
+    background-color: #141A20;
+    display: flex;
+    justify-content: center;
+}
+
+.company img {
+    width: 100px;
+    height: 30px;
+    margin: 0 1rem;
+}
+
+.company {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    line-height: 5px;
+}
+
+.company-title {
+    display: block;
+    margin: 1rem 1rem 17px 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-style: 200;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 16px;
+}
+
+.company-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    margin: 0 1rem 1rem 1rem;
+    font-size: 13px;
+    line-height: 1rem;
+}
+
+.link-text {
+    margin: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+
+.link-text:hover {
+    color: #01b1f6;
+}
+
+.company2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    line-height: 2px;
+}
+
+.down-footer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: white;
+}

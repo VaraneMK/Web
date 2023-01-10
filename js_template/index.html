@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="work-area">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <script>
+
+        'use strict'
+
+        let circle = document.querySelector('.wrapper>.work-area>.circle');
+
+        let circle_parent = circle.parentElement;
+        let circle_position = circle.getBoundingClientRect();
+        let circle_parent_position = circle_parent.getBoundingClientRect();
+
+        const STEP = 30;
+
+
+
+        // circle.addEventListener('click', (e) => {
+        //    let circle_position = circle.getBoundingClientRect();
+        //    let circle_parent_position = circle_parent.getBoundingClientRect();
+        //    let current_position = circle_position.x - circle_parent_position.x + STEP;
+
+        //     if (circle_position.right + STEP < circle_parent_position.right) {
+        //         circle.style.left = current_position + 'px'
+        //     }
+        //     else if ( circle_position.right != circle_parent_position.right) {
+        //         circle.style.left = circle_parent_position.right - circle_parent_position.left - circle_position.width-7+'px';
+            
+        //     }
+
+
+        // });
+
+
+
+
+
+
+
+
+
+
+        //делегат нажатия кнопки мыши на кружочке
+        function circle_mouseDown(event){
+            //делегат перемещения мыши при нажатой кнопке на кружочке
+            function document_mouseMove(event){
+                //TODO: Основной алгоритм перемещения элемента
+                let c_pos = circle.getBoundingClientRect();
+                let p_pos = circle_parent.getBoundingClientRect();
+
+                if(event.pageX > p_pos.left + circle_position.width/2 && event.pageX < p_pos.right - circle_position.width/2  )
+                {
+                    circle.style.left = event.pageX - p_pos.left - (c_pos.width / 2) + 'px';
+                    
+                }
+                else {
+                    if(event.pageX < p_pos.left + circle_position.width/2)
+                    circle.style.left = '0px';
+                    if(event.pageX > p_pos.right - circle_position.width/2)
+                    circle.style.left = '89.5%';
+                }
+
+                if(event.pageY > p_pos.top + circle_position.width/2 && event.pageY < p_pos.bottom - circle_position.width/2)
+                {
+                    circle.style.top = event.pageY - p_pos.top- (c_pos.height / 2) + 'px';
+                }
+                else{
+                    if(event.pageY < p_pos.top + circle_position.width/2)
+                    circle.style.top = '0px';
+                    if(event.pageY > p_pos.top + circle_position.width/2)
+                    circle.style.top = '88%';
+                }
+                
+
+            }
+            document.addEventListener('mousemove',document_mouseMove)
+            //при отпускании кнопки мыши
+            circle.addEventListener('mouseup', (e)=>{
+                document.removeEventListener('mousemove',document_mouseMove)
+            });
+        }
+        
+
+        circle.addEventListener('mousedown',circle_mouseDown);
+
+
+
+        function saySomething(){
+            alert('Hello');
+        }
+
+       // setTimeout(saySomething, 5000);
+    </script>
+</body>
+
+</html>
