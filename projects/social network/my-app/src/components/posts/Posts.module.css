@@ -1,0 +1,61 @@
+.posts {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  width: 40%;
+}
+
+.posts h4 {
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold;
+}
+
+.input {
+  font-size: 16px;
+  font-size: Max(16px, 1rem);
+  padding: 0.8rem;
+  background-color: #fff;
+  border: 1px solid #736f6f;
+  border-radius: 4px;
+  width: 100%;
+  border-radius: 20px;
+  margin-right: 1rem;
+}
+
+textarea.input {
+  resize: none;
+}
+
+.inputPost {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputBtn {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  height: 2rem;
+  width: 2rem;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputBtn:hover {
+  border-radius: 20px;
+  -webkit-box-shadow: -2px 0px 9px 1px rgba(148, 148, 148, 0.35);
+  -moz-box-shadow: -2px 0px 9px 1px rgba(148, 148, 148, 0.35);
+  box-shadow: -2px 0px 9px 1px rgba(148, 148, 148, 0.35);
+}
+
+.inputBtn:hover svg {
+  stroke: black;
+}

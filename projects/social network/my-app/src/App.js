@@ -2,13 +2,13 @@
 // eslint-disable-next-line no-unused-vars
 import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header';
-import Main from './components/Main';
+import Main from './components/main/Main';
+import Nav from './components/navbar/Nav';
 
 function App() {
   return (
     <div className="app-wrapper">
-      <Header />
+      <Nav />
       <Main />
     </div>
   );
