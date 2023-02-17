@@ -9,6 +9,7 @@ import { ReactComponent as Music } from './../../icons/music.svg';
 import { ReactComponent as Settings } from './../../icons/settings.svg';
 import { ReactComponent as Logout } from './../../icons/log-out.svg';
 import { ReactComponent as Friends } from './../../icons/users.svg';
+import { NavLink } from 'react-router-dom';
 
 function Nav() {
   return (
@@ -18,7 +19,7 @@ function Nav() {
         Никнейм
       </div>
       <div className={styles.menu}>
-        <button onclick="/profile" className={styles.item}>
+        <NavLink to="/profile" className={navData => (navData.isActive ? styles.active : styles.item)}>
           <table aria-colspan={2}>
             <tr>
               <td className={styles.icon}>
@@ -27,8 +28,8 @@ function Nav() {
               <td className={styles.link}>Профиль</td>
             </tr>
           </table>
-        </button>
-        <button className={`${styles.item} ${styles.active}`}>
+        </NavLink>
+        <NavLink to="/dialogs" className={navData => (navData.isActive ? styles.active : styles.item)}>
           <table>
             <tr>
               <td className={styles.icon}>
@@ -37,8 +38,8 @@ function Nav() {
               <td className={styles.link}>Сообщения</td>
             </tr>
           </table>
-        </button>
-        <button className={styles.item}>
+        </NavLink>
+        <NavLink to="/news" className={navData => (navData.isActive ? styles.active : styles.item)}>
           <table>
             <tr>
               <td className={styles.icon}>
@@ -47,8 +48,8 @@ function Nav() {
               <td className={styles.link}>Лента</td>
             </tr>
           </table>
-        </button>
-        <button className={styles.item}>
+        </NavLink>
+        <NavLink to="/music" className={navData => (navData.isActive ? styles.active : styles.item)}>
           <table>
             <tr>
               <td className={styles.icon}>
@@ -57,8 +58,8 @@ function Nav() {
               <td className={styles.link}>Музыка</td>
             </tr>
           </table>
-        </button>
-        <button className={styles.item}>
+        </NavLink>
+        <NavLink to="/friends" className={navData => (navData.isActive ? styles.active : styles.item)}>
           <table>
             <tr>
               <td className={styles.icon}>
@@ -67,7 +68,7 @@ function Nav() {
               <td className={styles.link}>Друзья</td>
             </tr>
           </table>
-        </button>
+        </NavLink>
       </div>
       <div className={styles.footer}>
         <button>
