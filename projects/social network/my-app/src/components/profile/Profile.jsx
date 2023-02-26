@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Profile.module.css';
-import Posts from '../posts/Posts.jsx';
+import Posts from './posts/Posts.jsx';
 
-function Profile() {
+function Profile(props) {
   return (
     <div className={styles.content}>
       <div className={styles.header}>
@@ -13,17 +13,17 @@ function Profile() {
       </div>
       <div className={styles.posts}>
         <div className={styles.profile}>
-          <a href="#">
+          <a href="/friends">
             <p>Друзья</p>
           </a>
-          <a href="#">
+          <a href="/photos">
             <p>Фотографии</p>
           </a>
-          <a href="#">
+          <a href="/music">
             <p>Музыка</p>
           </a>
         </div>
-        <Posts />
+        <Posts dispatch={props.dispatch} postsPage={props.postsData} />
       </div>
     </div>
   );

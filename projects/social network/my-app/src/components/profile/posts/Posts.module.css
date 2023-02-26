@@ -1,9 +1,10 @@
 .posts {
   display: flex;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
-  width: 40%;
+  width: 50%;
+  height: auto;
 }
 
 .posts h4 {
@@ -34,13 +35,14 @@ textarea.input {
   width: 100%;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .inputBtn {
   color: black;
   background-color: white;
   border: 1px solid black;
-  border-radius: 20px;
+  border-radius: 50%;
   height: 2rem;
   width: 2rem;
   padding: 0px;

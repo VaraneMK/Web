@@ -1,0 +1,89 @@
+.chat {
+  height: 80%;
+  width: 70%;
+  margin: 0 auto;
+  border: 1px solid #736f6f49;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 5%;
+  display: flex;
+  flex-direction: row;
+  background-color: #00000049;
+  color: black;
+  border-radius: 20px 20px 0 0;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  margin-left: 1rem;
+}
+
+.link:hover {
+  color: black;
+}
+.link:hover svg {
+  stroke: black;
+}
+
+.user {
+  color: black;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-right: 11%;
+}
+.avatar {
+  border: 1px solid black;
+  background-color: white;
+  margin-right: 5px;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+}
+
+.messages {
+  width: 100%;
+  height: 90%;
+  overflow: auto;
+}
+
+.input {
+  height: 5%;
+  background-color: #736f6f49;
+  color: black;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputText {
+  width: 70%;
+  padding: 0.5rem;
+}
+
+.send {
+  margin-left: 5px;
+}
+
+.paperclip {
+  margin-right: 5px;
+}
+
+.buttons {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.buttons:hover {
+  stroke: black;
+}

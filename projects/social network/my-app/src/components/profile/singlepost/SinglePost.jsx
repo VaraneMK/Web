@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './SinglePost.module.css';
-import { ReactComponent as Like } from './../../icons/heart.svg';
-import { ReactComponent as Comments } from './../../icons/message-square.svg';
+import { ReactComponent as Like } from './../../../icons/heart.svg';
+import { ReactComponent as Comments } from './../../../icons/message-square.svg';
 
 function SinglePost(props) {
   return (
