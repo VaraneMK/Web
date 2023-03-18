@@ -5,23 +5,19 @@ import { ReactComponent as Send } from './../../../icons/send.svg';
 import { ReactComponent as PaperClip } from './../../../icons/paperclip.svg';
 import { NavLink } from 'react-router-dom';
 import Message from './message/Message.jsx';
-import { sendMessageCreator, updateNewMessageTextCreator } from '../../../redux/dialogsReducer.js';
 
 function Chat(props) {
-  let messagesItems = props.messagesData.messages.map(el => <Message name="Артём Аванесян" message={el.message} />);
-  let newMessageText = props.messagesData.newMessageText;
+  let messagesItems = props.dialogPage.messages.map(el => <Message name="Артём Аванесян" message={el.message} />);
+  let newMessageText = props.dialogPage.newMessageText;
 
   let inputElement = React.createRef();
 
   const updateText = () => {
-    debugger;
     let text = inputElement.current.value;
-    let action = updateNewMessageTextCreator(text);
-    props.dispatch(action);
+    props.updateText(text);
   };
   const sendMessage = () => {
-    let action = sendMessageCreator();
-    props.dispatch(action);
+    props.sendMessage();
   };
 
   return (

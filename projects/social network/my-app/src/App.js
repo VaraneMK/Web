@@ -8,7 +8,7 @@ function App(props) {
     <BrowserRouter>
       <div className="app-wrapper">
         <Nav />
-        <Main appState={props.appState} dispatch={props.dispatch} />
+        <Main state={props.state} />
       </div>
     </BrowserRouter>
   );

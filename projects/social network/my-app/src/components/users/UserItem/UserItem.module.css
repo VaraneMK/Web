@@ -1,0 +1,39 @@
+.item {
+  width: 80%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.244);
+  border-radius: 1rem;
+}
+
+.userInfo {
+  width: 70%;
+}
+
+.userInfo h4 {
+  margin-top: 0;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 4rem;
+}
+
+.avatar img {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.btn {
+  background: none;
+  border: none;
+}
+
+.btn:hover svg {
+  stroke: black;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Profile.module.css';
-import Posts from './posts/Posts.jsx';
-
+import PostsContainer from './posts/PostsContainer';
+import { NavLink } from 'react-router-dom';
 function Profile(props) {
   return (
     <div className={styles.content}>
@@ -13,17 +13,11 @@ function Profile(props) {
       </div>
       <div className={styles.posts}>
         <div className={styles.profile}>
-          <a href="/friends">
-            <p>Друзья</p>
-          </a>
-          <a href="/photos">
-            <p>Фотографии</p>
-          </a>
-          <a href="/music">
-            <p>Музыка</p>
-          </a>
+          <NavLink to="/friends">Друзья</NavLink>
+          <NavLink to="/photos">Фотографии</NavLink>
+          <NavLink to="/music">Музыка</NavLink>
         </div>
-        <Posts dispatch={props.dispatch} postsPage={props.postsData} />
+        <PostsContainer />
       </div>
     </div>
   );

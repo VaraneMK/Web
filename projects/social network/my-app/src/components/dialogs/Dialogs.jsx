@@ -3,7 +3,7 @@ import styles from './dialogs.module.css';
 import DialogItem from './DialogItem/DialogItem.jsx';
 
 function Dialogs(props) {
-  const dialogsElements = props.dialogsData.dialogsData.map(el => (
+  const dialogsElements = props.state.dialogPage.dialogsData.map(el => (
     <DialogItem name={el.name} id={el.id} lastMessage={el.lastMessage} time={el.time} />
   ));
 

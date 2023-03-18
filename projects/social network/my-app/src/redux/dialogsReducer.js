@@ -1,23 +1,43 @@
 const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
 const SEND_MESSAGE = 'SEND-MESSAGE';
 
-const dialogsReducer = (state, action) => {
+let initialState = {
+  dialogsData: [
+    { id: 1, name: 'Аванесян Артём', lastMessage: 'Hello boyyy', time: '17:50' },
+    { id: 2, name: 'Аванесян Артём', lastMessage: 'Hello boyyy', time: '17:50' },
+    { id: 3, name: 'Аванесян Артём', lastMessage: 'Hello boyyy', time: '17:50' },
+    { id: 4, name: 'Аванесян Артём', lastMessage: 'Hello boyyy', time: '17:50' },
+    { id: 5, name: 'Аванесян Артём', lastMessage: 'Hello boyyy', time: '17:50' },
+    { id: 6, name: 'Аванесян Артём', lastMessage: 'Hello boyyy', time: '17:50' },
+  ],
+
+  messages: [
+    { id: 1, message: 'Hello' },
+    { id: 2, message: 'Hello 2' },
+    { id: 3, message: 'Hello 3' },
+    { id: 4, message: 'Hello 4' },
+  ],
+  newMessageText: '',
+};
+
+const dialogsReducer = (state = initialState, action) => {
+  let stateCopy = JSON.parse(JSON.stringify(state));
   switch (action.type) {
     case UPDATE_NEW_MESSAGE_TEXT:
-      state.newMessageText = action.message;
-      return state;
+      stateCopy.newMessageText = action.message;
+      return stateCopy;
     case SEND_MESSAGE:
-      if (state.newMessageText !== '') {
+      if (stateCopy.newMessageText !== '') {
         let newMessage = {
           id: 5,
-          message: state.newMessageText,
+          message: stateCopy.newMessageText,
         };
-        state.messages.push(newMessage);
-        state.newMessageText = '';
+        stateCopy.messages.push(newMessage);
+        stateCopy.newMessageText = '';
       }
-      return state;
+      return stateCopy;
     default:
-      return state;
+      return stateCopy;
   }
 };
 

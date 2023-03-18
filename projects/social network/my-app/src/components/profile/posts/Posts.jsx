@@ -2,24 +2,21 @@ import React from 'react';
 import SinglePost from '../singlepost/SinglePost';
 import styles from './Posts.module.css';
 import { ReactComponent as Send } from './../../../icons/send.svg';
-import { addPostActionCreator, updateNewPostTextActionCreator } from '../../../redux/profileReducer.js';
 
-function posts(props) {
+function Posts(props) {
   const postsElements = props.postsPage.postsData.map(el => (
     <SinglePost author={el.author} message={el.message} likes={el.likes} comments={el.comments} />
   ));
 
   const newPostElement = React.createRef();
 
-  const addPost = () => {
-    let action = addPostActionCreator();
-    props.dispatch(action);
+  const onAddPost = () => {
+    props.addPost();
   };
 
   const onPostChange = () => {
     let text = newPostElement.current.value;
-    let action = updateNewPostTextActionCreator(text);
-    props.dispatch(action);
+    props.updateNewPostText(text);
   };
 
   return (
@@ -34,7 +31,7 @@ function posts(props) {
           value={props.postsPage.newPostText}
           onChange={onPostChange}
         ></textarea>
-        <button onClick={addPost} className={styles.inputBtn}>
+        <button onClick={onAddPost} className={styles.inputBtn}>
           <Send width="20px" height="20px" />
         </button>
       </div>
@@ -44,4 +41,4 @@ function posts(props) {
   );
 }
 
-export default posts;
+export default Posts;

@@ -21,52 +21,62 @@ function Nav() {
       <div className={styles.menu}>
         <NavLink to="/profile" className={navData => (navData.isActive ? styles.active : styles.item)}>
           <table aria-colspan={2}>
-            <tr>
-              <td className={styles.icon}>
-                <Profile />
-              </td>
-              <td className={styles.link}>Профиль</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td className={styles.icon}>
+                  <Profile />
+                </td>
+                <td className={styles.link}>Профиль</td>
+              </tr>
+            </tbody>
           </table>
         </NavLink>
         <NavLink to="/dialogs" className={navData => (navData.isActive ? styles.active : styles.item)}>
           <table>
-            <tr>
-              <td className={styles.icon}>
-                <Messages />
-              </td>
-              <td className={styles.link}>Сообщения</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td className={styles.icon}>
+                  <Messages />
+                </td>
+                <td className={styles.link}>Сообщения</td>
+              </tr>
+            </tbody>
           </table>
         </NavLink>
         <NavLink to="/news" className={navData => (navData.isActive ? styles.active : styles.item)}>
           <table>
-            <tr>
-              <td className={styles.icon}>
-                <List />
-              </td>
-              <td className={styles.link}>Лента</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td className={styles.icon}>
+                  <List />
+                </td>
+                <td className={styles.link}>Лента</td>
+              </tr>
+            </tbody>
           </table>
         </NavLink>
         <NavLink to="/music" className={navData => (navData.isActive ? styles.active : styles.item)}>
           <table>
-            <tr>
-              <td className={styles.icon}>
-                <Music />
-              </td>
-              <td className={styles.link}>Музыка</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td className={styles.icon}>
+                  <Music />
+                </td>
+                <td className={styles.link}>Музыка</td>
+              </tr>
+            </tbody>
           </table>
         </NavLink>
         <NavLink to="/friends" className={navData => (navData.isActive ? styles.active : styles.item)}>
           <table>
-            <tr>
-              <td className={styles.icon}>
-                <Friends />
-              </td>
-              <td className={styles.link}>Друзья</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td className={styles.icon}>
+                  <Friends />
+                </td>
+                <td className={styles.link}>Друзья</td>
+              </tr>
+            </tbody>
           </table>
         </NavLink>
       </div>
