@@ -1,0 +1,46 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0.5rem auto;
+}
+.author {
+  color: black;
+}
+
+.text {
+  font-size: 0.8rem;
+  position: relative;
+  padding: 0.8rem;
+  border: 1px solid #736f6f;
+  border-radius: 20px;
+}
+
+.like {
+  border: none;
+  background-color: white;
+  padding: 0;
+  margin: 0 1rem;
+}
+
+.like:hover svg {
+  fill: red;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.comments {
+  border: none;
+  background-color: white;
+  padding: 0;
+}
+
+.comments:hover svg {
+  fill: #736f6f;
+}

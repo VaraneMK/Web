@@ -1,0 +1,65 @@
+.content {
+  width: 100%;
+  height: 90%;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  background: rgb(31, 31, 31);
+  background: linear-gradient(
+    210deg,
+    rgba(31, 31, 31, 1) 0%,
+    rgba(45, 44, 44, 1) 25%,
+    rgba(78, 78, 78, 1) 59%,
+    rgba(110, 110, 110, 1) 100%
+  );
+  border-radius: 1rem;
+}
+
+.avatar {
+  position: absolute;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  bottom: -1rem;
+  left: -webkit-calc(25% - 5rem);
+  left: -moz-calc(25% - 5rem);
+  left: calc(25% - 5rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.online {
+  position: absolute;
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: greenyellow;
+  border-radius: 50%;
+  bottom: 0;
+  right: 1rem;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 1rem;
+}
+
+.profile a {
+  text-decoration: none;
+}
+
+.profile p {
+  font-weight: bold;
+  color: black;
+}
+
+.profile a:hover {
+  text-decoration: underline;
+}
