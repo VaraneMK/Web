@@ -1,0 +1,44 @@
+footer {
+	height: 3rem;
+	width: 100%;
+	background: rgba(17, 17, 17, 0.5);
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	margin: 0 3rem;
+}
+
+.footerLinks {
+	display: flex;
+	gap: 1rem;
+}
+
+.footerLinks path {
+	transition: all 0.3s;
+}
+
+.footerLinks svg:hover path {
+	fill: white;
+	fill-opacity: 1;
+}
+
+.aboutCompanyBtn {
+	background: none;
+	border: none;
+	width: 7.25rem;
+	height: 3rem;
+	font-size: 1rem;
+	color: rgba(255, 255, 255, 0.2);
+	transition: color 0.3s;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+.aboutCompanyBtn:hover {
+	color: white;
+}

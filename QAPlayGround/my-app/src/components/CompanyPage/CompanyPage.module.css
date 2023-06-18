@@ -1,0 +1,54 @@
+.companyPage {
+	margin: 1.5rem 20rem 3rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.blockTitle {
+	font-weight: 700;
+	font-size: 3.2rem;
+	line-height: 4.2rem;
+	margin: 0;
+}
+
+.block {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	width: 100%;
+}
+
+.text {
+	font-weight: 500;
+	font-size: 1.6rem;
+	line-height: 2.1rem;
+	margin: 0;
+}
+
+.row {
+	font-weight: 700;
+	font-size: 1.8rem;
+	line-height: 2.35rem;
+}
+
+.rowText {
+	font-weight: 500;
+	font-size: 1.6rem;
+	line-height: 2.1rem;
+}
+
+tr > td {
+	padding-bottom: 1rem;
+}
+
+td {
+	width: 50%;
+}
+
+.link {
+	font-weight: 500;
+	font-size: 1.6rem;
+	line-height: 2.1rem;
+	text-decoration-line: underline;
+}

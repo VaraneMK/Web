@@ -1,0 +1,168 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 3rem;
+	width: calc(100vw-3rem);
+	height: 4.5rem;
+	position: relative;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.authBtn {
+	background: none;
+	border: none;
+	width: 7.5rem;
+	height: 2.5rem;
+	color: white;
+	font-weight: 700;
+	font-size: 1rem;
+	transition: color 0.3s;
+	cursor: pointer;
+}
+
+.authBtn:hover {
+	color: #93ff12;
+}
+
+.navLinks {
+	height: 2.5rem;
+	width: 36.7rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.headerLink {
+	text-decoration: none;
+	color: white;
+	transition: color 0.3s;
+}
+
+.activeLink {
+	color: #93ff12;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.headerLink:hover {
+	color: #93ff12;
+}
+
+.userBtn {
+	width: 7.5rem;
+	height: 2.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.8rem;
+	cursor: pointer;
+}
+
+.disabledLink {
+	cursor: no-drop;
+}
+
+.disabledLink:hover {
+	color: #850505;
+}
+
+/* Модальное окно */
+
+.modalTitle {
+	font-weight: 700;
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+}
+
+.modalInput {
+	height: 2.5rem;
+	width: 15rem;
+	background: rgba(255, 255, 255, 0.05);
+	border: none;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.modalBtn {
+	height: 2.5rem;
+	width: 7.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.modalBtn:hover {
+	text-shadow: -0.1rem -0.1rem 0px #9c0096;
+}
+
+.modalBtn span {
+	display: block;
+	background: #93ff12;
+	transition: all 0.3s;
+}
+
+.modalBtn span:nth-child(1) {
+	height: 2px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: -80%;
+	transition-delay: 0.3s;
+}
+
+.modalBtn span:nth-child(2) {
+	height: 100%;
+	width: 2px;
+	position: absolute;
+	left: 0;
+	top: -70%;
+	transition-delay: 0.3s;
+}
+
+.modalBtn span:nth-child(3) {
+	height: 2px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	right: -80%;
+	transition-delay: 0.3s;
+}
+
+.modalBtn span:nth-child(4) {
+	height: 100%;
+	width: 2px;
+	position: absolute;
+	right: 0;
+	bottom: -70%;
+	transition-delay: 0.3s;
+}
+
+.modalBtn:hover span:nth-child(1) {
+	top: 0;
+	left: 0;
+}
+
+.modalBtn:hover span:nth-child(2) {
+	top: 0;
+	left: 0;
+}
+.modalBtn:hover span:nth-child(3) {
+	bottom: 0;
+	right: 0;
+}
+.modalBtn:hover span:nth-child(4) {
+	bottom: 0;
+	right: 0;
+}

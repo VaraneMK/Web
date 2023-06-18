@@ -1,0 +1,149 @@
+* {
+	text-decoration: none;
+	color: white;
+}
+.card {
+	width: 100%;
+	height: 15rem;
+	display: flex;
+	justify-content: space-between;
+	gap: 5.5rem;
+	padding: 1.5rem;
+	cursor: pointer;
+	position: relative;
+	background: transparent;
+	overflow: hidden;
+	transition: color 0.3s;
+}
+
+.information {
+	display: flex;
+	flex-direction: column;
+	gap: 1.1rem;
+	width: 55%;
+}
+
+.courseTitle {
+	display: flex;
+	gap: 1.8rem;
+	text-decoration: none;
+}
+
+.courseName {
+	font-weight: 700;
+	font-size: 1.8rem;
+	color: #93ff12;
+	position: relative;
+}
+
+.courseName::before {
+	content: attr(title);
+	z-index: -100;
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: #9c0096;
+	width: 100%;
+	height: 100%;
+	transition: all 1s;
+	opacity: 0;
+}
+
+.card:hover .courseName::before {
+	left: -0.2rem;
+	top: -0.2rem;
+	opacity: 1;
+}
+
+.addInfo {
+	font-weight: 500;
+	font-size: 1.6rem;
+}
+
+.courseTags {
+	display: flex;
+	gap: 0.75rem;
+}
+
+.tag {
+	border: 2px solid #ffffff;
+	border-radius: 0.75rem;
+	padding: 0.15rem 1rem;
+	color: white;
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+.courseDesc {
+	width: 100%;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.card span {
+	display: block;
+	background: #93ff12;
+	transition: all 0.3s;
+}
+
+.card span:nth-child(1) {
+	height: 2px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: -80%;
+	transition-delay: 0.3s;
+}
+
+.card span:nth-child(2) {
+	height: 100%;
+	width: 2px;
+	position: absolute;
+	left: 0;
+	top: -70%;
+	transition-delay: 0.3s;
+}
+
+.card span:nth-child(3) {
+	height: 2px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	right: -80%;
+	transition-delay: 0.3s;
+}
+
+.card span:nth-child(4) {
+	height: 100%;
+	width: 2px;
+	position: absolute;
+	right: 0;
+	bottom: -70%;
+	transition-delay: 0.3s;
+}
+
+.card:hover span:nth-child(1) {
+	top: 0;
+	left: 0;
+}
+
+.card:hover span:nth-child(2) {
+	top: 0;
+	left: 0;
+}
+.card:hover span:nth-child(3) {
+	bottom: 0;
+	right: 0;
+}
+.card:hover span:nth-child(4) {
+	bottom: 0;
+	right: 0;
+}
+
+.courseImg {
+	width: 20rem;
+	height: 12rem;
+	background: #202020;
+	border: 0.25rem solid rgba(255, 255, 255, 0.05);
+}
