@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href='./img/map/marker.svg'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <title>Установка водоматов "Живая Вода" в Москва и МО</title>
+    <meta name="description" content="Установите водомат на свою территорию или выберите место вместе с нами, предоставьте удобство и заботу о здоровье своим клиентам."/>
+    <meta name="keywords" content="водоматы,установка, живая вода,автоматы,установка водоматов"/>
+    <meta name="robots" content="index">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    
+        ym(93954215, "init", {
+             clickmap:true,
+             trackLinks:true,
+             accurateTrackBounce:true,
+             webvisor:true
+        });
+     </script>
+     <noscript><div><img src="https://mc.yandex.ru/watch/93954215" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+     <!-- /Yandex.Metrika counter -->
+</head>
+
+<body>
+    <header>
+        <div class="header__left__side">
+            <div class="header__logo">
+                <img src="./img/logo.svg" alt="">
+                <span class="text__logo">Водоматы</span>
+            </div>
+            <div class="header__links">
+                <a href=""></a>
+                <a href="#map__block">Карта</a>
+                <a href="#about__block">Почему мы?</a>
+                <a href="#support__block">Поддержка</a>
+                <a href="#question__block">Вопросы</a>
+            </div>
+        </div>
+        <div class="header__right__side">
+            <a style="font-family: Montserrat" href="tel:88005553535"> <span class="hide__tel">Контактный
+                    телефон:</span> +7 (916)
+                057-05-44</a>
+        </div>
+    </header>
+    <main>
+        <section class="preview__page">
+            <div class="preview__left__side">
+                <h1 class="title">
+                    Живая вода
+                </h1>
+                <h2 class="preview__subtitle">
+                    Добро пожаловать на наш сайт, где вы можете предложить идеальное место для размещения водомата! Мы
+                    предлагаем широкий ассортимент водоматов, которые позволят вашим клиентам наслаждаться свежей,
+                    фильтрованной водой. Вы можете определить оптимальное расположение, где водомат будет виден и
+                    доступен для всех желающих. Разместите водоматы с нами и предоставьте удобство и заботу о здоровье
+                    своим клиентам прямо у них под рукой.
+                </h2>
+                <a href="tel:88005553535" class="preview__button">Связаться</a>
+                <div class="preview__achievements">
+                    <div class="preview__achievements__block">
+                        <img src="./img/exp.svg" alt="">
+                        Годовой опыт
+                    </div>
+                    <div class="vertical__line"></div>
+                    <div class="preview__achievements__block">
+                        <img src="./img/clients.svg" alt="">
+                        Довольные и счастливые клиенты
+                    </div>
+                </div>
+            </div>
+            <div class="preview__right__side">
+                <img class="preview__img" src="./img/preview.png" alt="">
+            </div>
+        </section>
+        <section class="about__work__process page__block">
+            <h1 class="title">Как мы работаем?</h1>
+            <div class="work__process__blocks">
+                <div class="process__block">
+                    <img style="height: 7.85rem;width: 8.15rem;"src="./img/block.png" alt="">
+                    <h1 class="process__block__title">
+                        Выбор места установки
+                    </h1>
+                    <span class="process__block__text">
+                        Вы выбираете наиболее выгодное место, куда хотели бы установить водомат. Мы гарантируем чистоту
+                        территории
+                        и техническую поддержку водомата.
+                    </span>
+                </div>
+                <div class="process__block">
+                    <img style="margin-top:1.2rem;height: 6.3rem;width: 8rem;"src="./img/block2.png" alt="">
+                    <h1 class="process__block__title">
+                        Оформление заказа
+                    </h1>
+                    <span class="process__block__text">
+                        Мы готовы заключить
+                        договор аренды этой земли.
+                        Взаимовыгодное сотрудничество - это наш приоритет.
+                    </span>
+                </div>
+                <div class="process__block">
+                    <img style="margin-top:1rem;height: 6.5rem;width: 8.15rem;"src="./img/block3.png" alt="">
+                    <h1 class="process__block__title">
+                        Оплата
+                    </h1>
+                    <span class="process__block__text">
+                        Оплата услуги производится после договора аренды территории для водомата. Получение денег может
+                        быть произведено удобным для Вас способом.
+                    </span>
+                </div>
+                <div class="process__block">
+                    <img style="margin-top:0.6rem;height: 6.85rem;width: 8.15rem;"src="./img/block4.png" alt="">
+                    <span class="process__block__title">
+                        Установка водомата
+                    </span>
+                    <span class="process__block__text">
+                        Для установки водомата необходимо произвести ряд подготовительных работ, включая проведение
+                        технического обследования местности.
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section id="map__block" class="map__block container">
+            <div class="title">Карта точек водоматов</div>
+            <div class="map" id="map">
+            </div>
+        </section>
+        <section class="about__us page__block">
+            <div class="title" id="about__block">Почему мы?</div>
+            <div class="about__us__blocks">
+                <div class="about__us__block">
+                    <div class="about__title">
+                        <img src="./img/about1.png" alt="">
+                        Надежность
+                    </div>
+                    <div class="about__text">
+                        Наша компания предоставляет водоматы высокого уровня качества, используя только
+                        надежные компоненты и технологии, что обеспечивает устойчивость и надежность её изделий на
+                        долгие годы эксплуатации.
+                    </div>
+                </div>
+                <div class="about__us__block">
+                    <div class="about__title">
+                        <img src="./img/about2.png" alt="">
+                        Скорость
+                    </div>
+                    <div class="about__text">
+                        Благодаря опытному монтажному персоналу, мы гарантируем быстрое оформление и установку
+                        водоматов в любом месте.
+                    </div>
+                </div>
+                <div class="about__us__block">
+                    <div class="about__title">
+                        <img src="./img/about3.png" alt="">
+                        Стоимость
+                    </div>
+                    <div class="about__text">
+                        Мы гарантируем конкурентные цены и прозрачные условия сотрудничества. Не упустите возможность
+                        обеспечить ваше место удобными и доступными источниками свежей воды.
+                    </div>
+                </div>
+                <div class="about__us__block">
+                    <div class="about__title">
+                        <img src="./img/about4.png" alt="">
+                        Экологичность
+                    </div>
+                    <div class="about__text">
+                        Установка водоматов способствует экологичности, так как позволяет избежать использования
+                        одноразовых пластиковых бутылок и снизить количество отходов, а также экономить воду за счет ее
+                        точного дозирования без лишних потерь.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="support__block" class="support__page">
+            <div class="preview__left__side">
+                <h1 class="title">
+                    Отвечаем на Ваши звонки
+                </h1>
+                <h2 class="preview__subtitle">
+                    Не желаете ли обсудить детали установки водомата по телефону? Мы предлагаем вам удобную возможность
+                    позвонить нашей команде и получить все необходимые сведения о процессе установки. Наши
+                    квалифицированные специалисты с радостью ответят на ваши вопросы, проведут консультацию и помогут в
+                    выборе наилучшего варианта для ваших потребностей. Звонок займет всего несколько минут, но он
+                    поможет нам лучше понять ваши требования и предоставить вам точную информацию о стоимости и времени
+                    установки водомата. Не теряйте время - звоните нам прямо сейчас!
+                </h2>
+                <a href="tel:88005553535" class="preview__button">Связаться</a>
+            </div>
+            <div class="preview__right__side">
+                <img class="preview__img" src="./img/support.png" alt="">
+            </div>
+        </section>
+        <section id="question__block" class="questions__page">
+            <div class="title">
+                Часто задаваемые вопросы
+            </div>
+            <div class="questions__block">
+                <div class="question">
+                    <div class="question__text">
+                        Как проходит процесс выбора места и установки водомата?
+                        <div class="answer__button">
+                            -
+                        </div>
+                    </div>
+                    <div class="answer answer__show">
+                        Процесс выбора места и установки водомата обычно включает несколько шагов:<br>
+                        1. Консультация и оценка; <br>
+                        2. Подготовка предложения; <br>
+                        3. Согласование и подписание договора;<br>
+                        4. Установка и настройка;<br>
+                        5. Обслуживание и поддержка.<br>
+                        Мы стараемся сделать процесс выбора и установки водомата максимально простым и безопасным для
+                        Вас.
+                    </div>
+                    <hr>
+                </div>
+                <div class="question">
+                    <div class="question__text">
+                        В чем Ваша выгода выбора места установки водомата?
+                        <div class="answer__button">
+                            +
+                        </div>
+                    </div>
+                    <div class="answer">
+                        Выбор места установки водомата представляет значительную выгоду для Вас. Водоматы от нас - это
+                        улучшение образа и экологическая ответственность, а также гарантированная и своевременная оплата
+                        за выбор места установки.
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__logo">
+            <img src="./img/Ресурс 2.svg" alt="">
+            <div class="text__logo">Водоматы</div>
+        </div>
+        <div class="footer__adr"><span style="font-weight: 600;">Юридический адрес:</span><br>г.Москва, Щербинка, Улица
+            Остафьевская, 4</div>
+        <div class="footer__tel">
+            <span style="font-weight: 600;">Контактный телефон:</span><br><a style="font-family: Montserrat" href="
+                tel:89160570544">+7 (916)
+                057-05-44</a>
+        </div>
+    </footer>
+    <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script defer src="./map.js"></script>
+
+</body>
+
+</html>
