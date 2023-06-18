@@ -1,0 +1,110 @@
+.switcherThemes {
+	position: fixed;
+	top: 2rem;
+	right: 2.5rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.switcherThemes:hover {
+	transform: rotateZ(5deg);
+}
+
+.App {
+	margin: 0 7rem;
+}
+
+.support__button {
+	height: 3.7rem;
+	width: 4.3rem;
+	border-radius: 0 1.25rem;
+	background: var(--support-button);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 1.2rem;
+
+	position: fixed;
+	bottom: 4rem;
+	right: 2rem;
+
+	cursor: pointer;
+}
+
+.support__button:hover {
+	width: 4.5rem;
+	height: 3.9rem;
+}
+
+.modalInput {
+	outline: none;
+	margin-bottom: 1.3rem;
+	width: 27.5rem;
+	height: 2.5rem;
+	padding: 1.4rem 1.9rem;
+	font-weight: 300;
+	font-size: 2rem;
+	line-height: 0.5rem;
+	letter-spacing: 0.05em;
+	color: var(--modal-text-color);
+	border: 3px solid var(--modal-input-color);
+	border-radius: 0px 1.25rem;
+	background: transparent;
+}
+
+.modalBtn {
+	width: 100%;
+	height: 4.5rem;
+	background: var(--modal-input-color);
+	color: var(--modal-text-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0px 0px 1.4rem 1.4rem;
+	font-weight: 600;
+	font-size: 2rem;
+	line-height: 0.5rem;
+	letter-spacing: 0.06em;
+
+	cursor: pointer;
+}
+/* 
+input[type='checkbox'] {
+	visibility: hidden;
+}
+input[type='checkbox']:checked + label {
+	transform: rotate(180deg);
+	background-color: var(--background-color);
+}
+input[type='checkbox']:checked + label:before {
+	transform: translateX(0.9rem);
+	background-color: var(--font-color);
+}
+
+label {
+	display: flex;
+	width: 2rem;
+	height: 1rem;
+	border: 0.2rem solid;
+	border-radius: 99em;
+	position: relative;
+	transition: transform 0.75s ease-in-out;
+	transform-origin: 50% 50%;
+	cursor: pointer;
+}
+label:before {
+	transition: transform 0.75s ease;
+	transition-delay: 0.5s;
+	content: '';
+	display: block;
+	position: absolute;
+	width: 0.8rem;
+	height: 0.8rem;
+	background-color: #000;
+	border-radius: 50%;
+	top: 2px;
+	left: 2px;
+} */

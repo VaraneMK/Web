@@ -1,0 +1,139 @@
+@import url(../../fonts/PFBagueSansProBold/css/fonts.css);
+
+.home__screen {
+	height: 90vh;
+	display: flex;
+	align-items: end;
+	margin-bottom: 2rem;
+	background: var(--background-color);
+}
+
+.home__screen__title {
+	position: absolute;
+	top: -57%;
+	margin-top: 8rem;
+	font-family: 'PFBagueSansPro';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 11.4rem;
+	line-height: 8rem;
+	letter-spacing: 0.02em;
+}
+
+.home__screen__title__first__word {
+	margin-left: 2rem;
+}
+
+.home__screen__content {
+	position: relative;
+	width: 85%;
+	height: 65%;
+	display: flex;
+	transition: all 0.3s ease-in-out;
+	background: var(--main-info-gradient);
+}
+
+.logo {
+	position: absolute;
+	top: -40%;
+	right: -5rem;
+}
+
+.home__screen__info {
+	margin-top: 4rem;
+	width: 34rem;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.home__screen__subtitle {
+	margin-left: 2rem;
+	font-family: 'PFBagueSansPro';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1.8rem;
+	line-height: 1.45rem;
+
+	/* or 80% */
+	letter-spacing: -0.065em;
+
+	color: var(--main-subtitle-color);
+}
+
+.home__screen__button {
+	margin-left: 9rem;
+	margin-top: 3rem;
+	width: 20rem;
+	height: 3.7rem;
+	font-weight: 400;
+	font-size: 1.75rem;
+	line-height: 1.2rem;
+	background: var(--main-btn-background-color);
+	letter-spacing: -0.06em;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 0 2.5rem;
+
+	cursor: pointer;
+}
+
+.home__screen__button:hover {
+	background: var(--hover-support-button-color);
+	width: 21rem;
+	height: 4rem;
+}
+
+.logo {
+	width: 29.2rem;
+	height: 26rem;
+	background-image: var(--logo-src);
+	margin-left: 5rem;
+}
+
+.company__name path {
+	fill: var(--font-color);
+}
+
+.container {
+	margin: 0 4rem;
+	display: flex;
+	flex-direction: column;
+	gap: 6rem;
+}
+
+.modalInput {
+	outline: none;
+	margin-bottom: 1.3rem;
+	width: 27.5rem;
+	height: 2.5rem;
+	padding: 1.4rem 1.9rem;
+	font-weight: 300;
+	font-size: 2rem;
+	line-height: 0.5rem;
+	letter-spacing: 0.05em;
+	color: var(--modal-text-color);
+	border: 3px solid var(--modal-input-color);
+	border-radius: 0px 1.25rem;
+	background: transparent;
+}
+
+.modalBtn {
+	width: 100%;
+	height: 4.5rem;
+	background: var(--modal-input-color);
+	color: var(--modal-text-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0px 0px 1.4rem 1.4rem;
+	font-weight: 600;
+	font-size: 2rem;
+	line-height: 0.5rem;
+	letter-spacing: 0.06em;
+
+	cursor: pointer;
+}

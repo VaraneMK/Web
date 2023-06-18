@@ -1,0 +1,153 @@
+.project__page {
+	position: relative;
+	padding-top: 6rem;
+}
+.back__button {
+	position: absolute;
+	top: -1.5rem;
+	left: 1.5rem;
+}
+
+.back__button path {
+	stroke: var(--block-color);
+}
+
+.project__title {
+	margin: 0;
+	line-height: 0.9em;
+	text-align: left;
+	color: var(--font-color);
+	font-size: 3.9rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 1.25rem;
+}
+
+.project__name {
+	color: var(--font-color);
+	font-size: 3.6rem;
+	font-weight: 100;
+	margin-bottom: 4.5rem;
+}
+
+.project__main {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5.5rem;
+}
+
+.project__img {
+	max-width: 27rem;
+	max-height: 16.5rem;
+}
+
+.project__logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-height: 16.5rem;
+	max-width: 20rem;
+	width: 16.5rem;
+}
+
+.project__colors {
+	display: flex;
+	flex-direction: column;
+	gap: 1.3rem;
+}
+
+.project__color {
+	width: 9.25rem;
+	height: 3.1rem;
+	background-color: #000;
+}
+
+.project__creators {
+	text-align: right;
+	width: 22rem;
+}
+
+.creators__title {
+	margin: 0;
+	line-height: 0.9;
+	text-align: left;
+	color: #983ec3;
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 1.25rem;
+}
+
+.creators__names {
+	color: var(--font-color);
+	font-size: 1.8rem;
+	font-weight: 500;
+	line-height: 1em;
+}
+
+.project__blocks {
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+	margin: 0 4rem;
+	margin-bottom: 5rem;
+}
+
+.project__block {
+	text-align: left;
+	color: var(--font-color);
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+}
+
+.block__title {
+	margin: 0;
+	line-height: 0.9em;
+	text-align: left;
+	font-size: 2.75rem;
+	font-weight: 700;
+}
+
+.block__text {
+	font-size: 1.8rem;
+	font-weight: 400;
+	line-height: 2rem;
+}
+
+.block__word {
+	color: #d799f3;
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+.project__date {
+	font-family: 'PFBagueSansPro';
+
+	letter-spacing: 0.005em;
+	position: relative;
+	z-index: 10;
+	color: var(--date-color);
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 1;
+
+	margin-bottom: 10.5rem;
+	align-items: center;
+	padding: 0.75rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.date__blur {
+	top: 0;
+	right: 0;
+	position: absolute;
+	width: 28rem;
+	height: 5.5rem;
+	z-index: 5;
+	background: var(--svg-fill-color);
+	filter: blur(3rem);
+}

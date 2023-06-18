@@ -1,0 +1,103 @@
+@import url(./fonts/PFBagueSansProBold/css/fonts.css);
+*,
+*::after,
+*::before {
+	/* box-sizing: border-box;
+	transition: color 0.5s;
+	transition: background 0.5s;
+	transition: fill 0.5s; */
+	transition-timing-function: ease-in-out;
+	transition: all 0.5s;
+}
+
+html {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.04em;
+}
+
+html[data-theme='dark'] {
+	--background-color: black;
+	--font-color: white;
+	--main-subtitle-color: #d799f3;
+	--main-info-gradient: linear-gradient(45deg, rgba(0, 0, 0, 0) 63%, #5c2078 100%);
+	--support-button: linear-gradient(180deg, #5c2078 0%, #983ec3 100%);
+	--main-btn-background-color: linear-gradient(267.53deg, #d799f376 3.47%, #5c20787c 59%, #d799f36d 100.92%);
+	--block-color: #d799f3;
+	--project-gradient-color: linear-gradient(180deg, #983ec3 0%, rgba(152, 62, 195, 0) 100%);
+	--rectangle-color: linear-gradient(90.1deg, #5c2078 4.04%, #000000 32.45%, #5c2078 75.77%, #000000 100.76%);
+	--svg-stroke-color: #d799f3;
+	--svg-fill-color: #5c2078;
+	--svg-gradient: linear-gradient(0deg, rgba(215, 153, 243, 1) 0%, rgba(255, 255, 255, 1) 90%);
+	--member-gradient: linear-gradient(180deg, #5c2078 0%, #000000 100%);
+	--logo-src: url(./img/logo_light.png);
+	--span-color: #d799f3;
+
+	--modal-background-gradient: conic-gradient(
+		from 39.74deg at 50% 50%,
+		#d67fff79 0deg,
+		#d885ff7e 126.79deg,
+		#d67fff83 360deg
+	);
+	--modal-input-color: white;
+	--modal-text-color: black;
+	--body-background: radial-gradient(
+		126.57% 126.57% at 25.59% 4.21%,
+		rgba(152, 62, 195, 0.5) 0%,
+		rgba(0, 0, 0, 0.5) 53.33%,
+		rgba(92, 32, 120, 0.5) 100%
+	);
+	--date-color: #d799f3;
+
+	--hover-links-color: #5c2078;
+	--hover-support-button-color: linear-gradient(267.53deg, #9c00e57d 3.47%, #d799f378 59%, #ae00ff7a 100.92%);
+	--hover-support-btn: linear-gradient(180deg, #edc7ff 0%, #d799f3 100%);
+}
+
+html[data-theme='light'] {
+	--hover-links-color: #d799f3;
+	--hover-support-button-color: linear-gradient(267.53deg, #d799f376 3.47%, #5c20787c 59%, #d799f36d 100.92%);
+	--hover-support-btn: linear-gradient(180deg, #5c2078 0%, #983ec3 100%);
+
+	--background-color: white;
+	--font-color: black;
+	--main-subtitle-color: #5c2078;
+	--support-button: linear-gradient(180deg, #edc7ff 0%, #d799f3 100%);
+	--main-info-gradient: linear-gradient(45deg, rgba(255, 255, 255, 0) 63%, rgba(215, 153, 243, 1) 100%);
+	--main-btn-background-color: linear-gradient(267.53deg, #9c00e57d 3.47%, #d799f378 59%, #ae00ff7a 100.92%);
+	--block-color: #5c2078;
+	--project-gradient-color: linear-gradient(180deg, #983ec3 0%, rgba(152, 62, 195, 0) 100%);
+	--rectangle-color: linear-gradient(90.1deg, #d799f3 4.04%, #ffffff 32.45%, #d799f3 75.77%, #ffffff 100.76%);
+	--svg-stroke-color: #5c2078;
+	--svg-gradient: linear-gradient(0deg, rgba(92, 32, 120, 1) 0%, rgba(0, 0, 0, 1) 90%);
+	--svg-fill-color: #d799f3;
+	--member-gradient: linear-gradient(180deg, #d799f3 0%, #000000 100%);
+	--logo-src: url(./img/logo_black.png);
+	--span-color: #d799f3;
+
+	--modal-background-gradient: conic-gradient(
+		from 39.74deg at 50% 50%,
+		rgba(153, 62, 195, 0.5) 0deg,
+		rgba(92, 32, 120, 0.5) 126.79deg,
+		rgba(153, 62, 195, 0.5) 360deg
+	);
+	--modal-input-color: black;
+	--modal-text-color: white;
+	--body-background: radial-gradient(
+			101.46% 42.35% at 120.13% 39.64%,
+			rgba(152, 62, 195, 0.4) 0%,
+			rgba(152, 62, 195, 0) 100%
+		)
+		/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+	--date-color: black;
+}
+
+body {
+	margin: 0;
+	color: var(--font-color);
+	/* background: var(--body-background); */
+	background-color: var(--background-color);
+}

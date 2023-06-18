@@ -1,0 +1,19 @@
+.projects__block {
+	width: 100%;
+}
+
+.block__title {
+	font-weight: 600;
+	font-size: 96px;
+	line-height: 80px;
+	letter-spacing: -0.045em;
+	margin-bottom: 5rem;
+	color: var(--block-color);
+}
+
+.projects__list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5rem;
+}
