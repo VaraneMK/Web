@@ -1,0 +1,201 @@
+html {
+	font-size: 22px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* background-color: orange; */
+}
+
+.content {
+	width: 17.5rem;
+	margin: 0 50vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	transition: all 0.3s;
+}
+
+a:hover {
+	color: #03c03c;
+}
+
+main {
+	margin: 0 auto;
+}
+
+form {
+	width: 17.5rem;
+	height: 95vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='number'],
+input[type='submit'],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	outline: 0;
+	box-shadow: none;
+}
+
+.logo {
+	font-size: 2rem;
+}
+
+.main-submit-form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	width: 100%;
+	position: relative;
+}
+
+.error {
+	height: 1.2rem;
+	color: red;
+	font-size: 0.9rem;
+	display: none;
+	text-align: center;
+	letter-spacing: -0.01em;
+}
+
+.is-invalid {
+	border: 1px solid red;
+}
+
+.is-valid {
+	border: none;
+}
+
+.input-form {
+	all: unset;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	padding: 0.8rem;
+	line-height: 131%;
+	height: 1rem;
+	color: #03c03c;
+	outline: none;
+	border: 2px solid #03c03c;
+	background-color: rgb(229, 228, 228);
+	border-radius: 0.5rem;
+}
+
+.input-form::placeholder {
+	color: #03c03c;
+	opacity: 0.3;
+}
+
+.input-form::-moz-placeholder {
+	color: #03c03c;
+	opacity: 0.3;
+}
+
+.input-form:-moz-placeholder {
+	color: #03c03c;
+	opacity: 0.3;
+}
+
+.input-form::-webkit-placeholder {
+	color: #03c03c;
+	opacity: 0.3;
+}
+
+.btn {
+	cursor: pointer;
+	font-family: 'Montserrat';
+	font-size: 1rem;
+	font-weight: 700;
+	padding: 0.6rem;
+	line-height: 131%;
+	width: 100%;
+	border-radius: 0.5rem;
+	background-color: #03c03c;
+	border: none;
+}
+
+.btn:focus,
+button:focus {
+	outline: none;
+}
+
+.btn:hover {
+	background-color: #04b73a;
+}
+
+.btn:active {
+	background-color: #02b337;
+}
+
+.is-invalid {
+	border: 2px solid red;
+}
+
+.is-valid {
+	border: 2px solid #03c03c;
+}
+
+input:focus {
+	/* border-color: #902dff; */
+}
+
+input:active {
+	/* border-color: #902dff; */
+}
+
+@media (max-width: 420px) {
+	html {
+		font-size: 20px;
+	}
+}
+@media (max-width: 380px) {
+	html {
+		font-size: 19px;
+	}
+}
+
+@media (max-width: 360px) {
+	html {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 340px) {
+	html {
+		font-size: 17px;
+	}
+}
+
+@media (max-width: 320px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 300px) {
+	html {
+		font-size: 15px;
+	}
+}
