@@ -1,0 +1,94 @@
+.faq__subheading {
+	font-size: 19px;
+	color: orange;
+	padding-top: 10px;
+}
+
+.section__description {
+	color: gray;
+	font-size: 15px;
+	font-weight: 700;
+	padding-top: 9px;
+}
+
+.section__heading {
+	color: #8d4004;
+	font-size: 0.9rem;
+	font-weight: 900;
+	font-style: bold;
+	padding-top: 10px;
+}
+
+.main__faq {
+	display: grid;
+	grid-template-columns: 1fr;
+	background-color: #e7e7e7;
+	padding: 100px 24px;
+}
+
+.faq__line {
+	background-color: orange;
+}
+
+.faq__image_container {
+	display: block;
+	width: 100%;
+}
+
+.faq__image {
+	display: block;
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.section__heading {
+		padding: 0px;
+	}
+	.main__faq {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 100px 0px 300px 0px;
+	}
+
+	.faq__image_container {
+		position: relative;
+		max-width: 600px;
+		padding: 0 15px;
+		margin: 0 0 auto auto;
+	}
+
+	.faq__image {
+		position: absolute;
+		display: block;
+		max-width: 570px;
+		max-height: 557px;
+		object-fit: cover;
+		object-position: 51.754% 30%;
+	}
+
+	/* .faq__subheading {
+		margin-top: 30px;
+		padding: 0px;
+	}
+
+	.faq__text {
+		padding: 0 15px;
+		max-width: 600px;
+	}
+
+	.accordion__label_heading {
+		font-size: 22px;
+		line-height: 30.8px;
+	} */
+}
+
+@media (max-width: 1200px) {
+	.faq__image {
+		max-width: 90%;
+	}
+}
+
+@media (max-width: 768px) {
+	.faq__image {
+		max-width: 100%;
+	}
+}

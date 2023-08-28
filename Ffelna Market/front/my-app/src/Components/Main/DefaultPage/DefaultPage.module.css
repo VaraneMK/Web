@@ -1,0 +1,48 @@
+.preview__image {
+	position: relative;
+	background-image: url('./../../../img/preview.jpg');
+	width: 100%;
+	height: 780px;
+	background-attachment: fixed;
+
+	background-position: center;
+	background-repeat: no-repeat;
+
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+video {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+video::-webkit-media-controls {
+	display: none;
+}
+
+.invisible__img {
+	border: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 10000;
+}
+
+@media (min-width: 768px) {
+	/* .preview__image {
+		padding: 190px 0;
+	} */
+}
+
+@media screen and (max-width: 922px), screen and (max-device-width: 922px) {
+	.preview__video {
+		display: none;
+	}
+	.invisible__img {
+		display: none;
+	}
+}

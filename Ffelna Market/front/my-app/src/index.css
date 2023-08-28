@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	min-height: 100vh;
+}
+
+html {
+	font-family: 'Mulish', sans-serif;
+}
+
+.PhoneInputInput {
+	border: 2px solid black;
+	border-radius: 1rem;
+	height: 90%;
+	padding: 10px;
+	font-size: 1rem;
+}
+
+.PhoneInputInput:focus {
+	border: 2px solid #fc7210;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	transition: all 0.2s;
+}

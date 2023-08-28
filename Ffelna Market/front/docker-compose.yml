@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+    web:
+        build: ./my-app # откуда брать инструкции для билда
+
+        image: ${IMAGE_NAME} # название образа
+
+        container_name: ${CONTAINER_NAME} # имя контейнера
+
+        restart: always # перезагрузка, если что-то пошло не так
+
+        stdin_open: true
+
+        tty: true # для открытия терминала после старта
+
+        volumes:
+            - './my-app:/home/app'
+
+        ports:
+            - ${PORT}:${PORT} # какой порт показывать снаружи

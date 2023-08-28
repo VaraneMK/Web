@@ -1,0 +1,36 @@
+.contacts {
+	background-color: #d4d2d0;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.mini__heading {
+	font-size: 22px;
+	color: #fc7210;
+}
+.contacts__info {
+	font-weight: bold;
+	color: #fc7210;
+}
+.heading__answer {
+	display: inline-block;
+	font-weight: bold;
+	color: #fc7210;
+	max-width: 90%;
+}
+
+.sub__heading {
+	font-size: 14px;
+	color: black;
+}
+
+p,
+h3,
+h2,
+h5,
+h6 {
+	margin: 4px;
+}
+
+hr {
+	margin: 0;
+}

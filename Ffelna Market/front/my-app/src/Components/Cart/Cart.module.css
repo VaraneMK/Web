@@ -1,0 +1,172 @@
+.shop__cart {
+	margin: 0 5%;
+	z-index: 100000;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.cart__title {
+	margin-top: 0;
+	text-align: center;
+}
+
+.list {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+
+.cart__item {
+	width: 100%;
+	height: 120px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	border-bottom: 1px solid black;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.item__img {
+	height: 100%;
+	cursor: pointer;
+}
+
+.item__img img {
+	height: 100%;
+}
+
+.item__title {
+	width: 100%;
+}
+
+.item__info {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.item__color {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.price__and__count {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+}
+
+.item__count {
+	display: flex;
+	align-items: center;
+	font-size: 1.5rem;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.item__btn {
+	width: 20px;
+	cursor: pointer;
+}
+
+.item__btn:hover {
+	fill: #fc7210;
+}
+
+.delete__btn {
+	height: 30px;
+	cursor: pointer;
+}
+
+.delete__btn:hover {
+	fill: #fc7210;
+}
+
+.total__price {
+	width: 100%;
+	font-size: 1.5rem;
+	text-align: right;
+}
+
+.btn__side {
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+}
+
+button {
+	border-radius: 10px;
+	outline: none;
+	border: none;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.clear__cart {
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	background-color: black;
+}
+
+.add__order {
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: black;
+	background-color: #fc7210;
+}
+
+@media (max-width: 1600px) {
+	.list {
+		width: 80%;
+	}
+}
+
+@media (max-width: 900px) {
+	.list {
+		width: 90%;
+	}
+}
+
+@media (max-width: 700px) {
+	.list {
+		width: 100%;
+	}
+	.item__info {
+		width: 35%;
+	}
+}
+
+@media (max-width: 400px) {
+	.shop__cart {
+		margin: 0 1%;
+	}
+	.price__and__count {
+		width: 40%;
+	}
+}

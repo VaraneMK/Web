@@ -1,0 +1,44 @@
+.catalog {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+.product {
+	max-width: 300px;
+}
+.borders__cat {
+	margin: 70px 0;
+}
+
+.catalog a {
+	font-size: 50px;
+	flex: 0 0 20%;
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.catalog a:hover {
+	text-decoration: underline;
+	color: #fc7210;
+}
+
+@media (max-width: 768px) {
+	.catalog {
+		gap: 50px;
+		justify-content: center;
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
+	.borders__cat {
+		margin: 50px;
+	}
+
+	.catalog a {
+		font-size: 30px;
+	}
+}

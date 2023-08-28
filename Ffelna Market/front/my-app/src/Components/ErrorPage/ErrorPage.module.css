@@ -1,0 +1,10 @@
+.error__page {
+	margin: auto auto;
+	color: #fc7210;
+	font-size: 2rem;
+	text-align: center;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
